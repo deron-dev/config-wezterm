@@ -2,6 +2,7 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 config.default_prog = { 'pwsh' }
+config.default_cwd = os.getenv("USERPROFILE")
 config.color_scheme = 'Oxocarbon Dark (Gogh)'
 
 -- config.window_decorations = "NONE";
